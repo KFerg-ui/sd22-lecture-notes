@@ -15,17 +15,17 @@ function ask(questionText) {
 let enemyList = ['darth vader', 'voldemort', 'palpatine', 'lex luthor'];
 
 async function respond() {
-  console.log(`I know this part isn't necessary but it's cool to make you think this rock is thinking stuff.`);
+  console.log('Fake thinking part....');
 
-  const answer = await readline.question("who goes there??");
-  {if (answer = "darth vader") { console.log("kindly go fuck yourself, D") }
-  else if (answer = enemyList) { "lame, go away" }
-  else { console.log("come on in!") };
-
-  console.log(`so you said your name is...`);
-  console.log(answer.toUpperCase());
-
-}}
+const answer = await ask("Who goes there?");
+  //Nick and Doug and Robyn really helped get through this part, as I originally had 'await rl.question("Who goes there?"); which was whacking out the function' -Kyle
+  let saniVar = answer.toLowerCase().trim()
+    
+      if (saniVar == "darth vader") { console.log(`Hello, Darth Vader! Kindly go fuck yourself!`) }
+    else if (enemyList.includes(saniVar)) { console.log("lame, go away") } 
+      //the '.includes' command came from Nick/Doug combo pack - Kyle
+    else { console.log(`Hello, ${saniVar.toUpperCase()} come on in!`) };
+  
+}
 
 respond();
-
