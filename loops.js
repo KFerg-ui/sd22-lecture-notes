@@ -83,7 +83,7 @@ for (i of number) {
 }
 
 /*
-DO...WHILE 
+DO...WHILE (Never gonna use these why do we do this)
 First executes code in the DO section, WHILE condition remains TRUE
 */
 let j = 0
