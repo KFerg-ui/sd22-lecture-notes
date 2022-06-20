@@ -4,6 +4,8 @@
     
 
 let fizzbuzz = number => {
+    if (!isNaN(number))
+        //checks if the argument is actually a number
     for (i = 0; i <= number; i++){
         if (i % 15 == 0) {
             console.log("fizzbuzz")}
@@ -21,10 +23,11 @@ let fizzbuzz = number => {
 //    process.stdin.on("data", (input) => {
 //            process.stdout.write(typeof parseInt(input))
 //    })
-    process.stdin.on("connect", () => {
-        console.log("pick a number")
-    })
+//    process.stdin.on("connect", () => {
+//        console.log("pick a number")
+//    })
     process.stdin.on("data", fizzbuzz)
+    //inputs data from outside of node into fizzbuzz
 
     //* THIS METHOD IS EFFICIENT BECAUSE WE DEFINE THE FUNCTION (it can be CALLED BACK again) and 
     //* THEN we are REFERENCING IT in the process.stdin.on line
