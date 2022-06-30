@@ -1,24 +1,25 @@
-const menu = [
-  { item: "Burger", price: 5.0 },
-  { item: "Fries", price: 3.5 },
-  { item: "Shake", price: 1.11 },
-  { item: "Salad", price: 4.25 },
+let grades = {
+  midterm: 3.3,
+  project: 4.0,
+  final: 3.2,
+};
 
-  function (orderPlacedString) {
-    let orderSplitArray = orderPlacedString.split("");
-    let foodSum = 0;
+function gpa(someGrades) {
+  let gradesToWeight = Object.keys(someGrades);
+  let gradeSum = 0;
+  let weightSum = 0;
+  console.log(grades.midterm);
 
-    for (let itemed of orderSplitArray) {
-      if (itemed === [item]);
-      foodSum += [price];
-      return foodSum;
-    }
-  },
-];
-console.log(orderPlacedString("fries"));
-// console.log(order("fries"));
-//
-
-// Your code here, reference the instructions if you're unsure how to start
-
-
+  gradesToWeight.forEach(object, key);
+  {
+    gradeSum = { grades };
+    console.log(gradeSum);
+    console.log(grades.final * 2);
+    weightSum = 1 + 1 + 2;
+    console.log(weightSum);
+  }
+  let weightedGrade = gradeSum / weightSum;
+  console.log(weightedGrade);
+  return weightedGrade;
+}
+console.log(weightedGrade);
